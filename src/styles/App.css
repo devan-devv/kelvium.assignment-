@@ -1,55 +1,46 @@
 .app-shell {
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+  background: #f3f7ff;
+  position: relative;
 }
 
 .app-content {
   width: 100%;
-  padding: 2rem 0 3rem;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 3rem;
 }
 
 .hero-copy {
-  max-width: 920px;
-  margin: -2rem auto 2rem;
-  background: white;
-  border-radius: 28px;
-  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.08);
-  padding: 2rem 2.25rem;
+  text-align: center;
+  margin-bottom: 2.5rem;
 }
 
-.eyebrow {
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
-  font-size: 0.8rem;
-  color: #7c3aed;
-  margin: 0 0 0.75rem;
-}
-
-.hero-copy h2 {
+.hero-copy h1 {
   margin: 0;
-  font-size: clamp(2rem, 3vw, 3rem);
-  line-height: 1.05;
+  font-size: clamp(2.4rem, 4vw, 3.4rem);
+  color: #0f172a;
 }
 
 .hero-message {
-  margin: 1rem 0 0;
-  color: #4b5563;
-  font-size: 1rem;
-  line-height: 1.8;
+  margin: 1rem auto 0;
   max-width: 720px;
+  color: #475569;
+  font-size: 1rem;
+  line-height: 1.75;
 }
 
-@media (max-width: 768px) {
-  .hero-copy {
-    margin: 0 1rem 1.5rem;
-    padding: 1.75rem 1.5rem;
-  }
+.cart-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.35);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  z-index: 50;
 }
 
-@media (max-width: 540px) {
-  .hero-copy {
-    border-radius: 22px;
-    padding: 1.5rem 1.25rem;
-  }
+.cart-overlay.open {
+  opacity: 1;
+  visibility: visible;
 }
