@@ -9,10 +9,9 @@ function App() {
       <Header />
       <main className="app-content">
         <section className="hero-copy">
-          <p className="eyebrow">Discover top products, handpicked for your lifestyle.</p>
-          <h2>Shop the latest essentials with confidence.</h2>
+          <h1>QuickCart</h1>
           <p className="hero-message">
-            QuickCart brings modern ecommerce design and responsive layout to one clean shopping page.
+            Browse our curated shopping catalog with clean, minimal product cards designed for easy browsing.
           </p>
         </section>
         <ProductList products={products} />
