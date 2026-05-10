@@ -4,7 +4,10 @@ function Header() {
   return (
     <header className="header-banner">
       <div className="header-content">
-        <p className="header-title">🛒 QuickCart</p>
+        <div className="header-brand">
+          <span className="header-icon">🛒</span>
+          <h1>QuickCart</h1>
+        </div>
         <p className="header-subtitle">Your one-stop shop for everything</p>
       </div>
     </header>

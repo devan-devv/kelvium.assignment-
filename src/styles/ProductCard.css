@@ -1,41 +1,38 @@
 .product-card {
   background: white;
   border-radius: 24px;
-  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.08);
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
   overflow: hidden;
   display: flex;
   flex-direction: column;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
-  animation: fadeInUp 0.8s ease both;
 }
 
-.product-card:hover,
-.product-card:focus-within {
+.product-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 26px 50px rgba(15, 23, 42, 0.16);
+  box-shadow: 0 26px 50px rgba(15, 23, 42, 0.14);
 }
 
 .product-image-wrap {
   position: relative;
   overflow: hidden;
-  min-height: 220px;
+  min-height: 210px;
 }
 
 .product-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.5s ease;
+  transition: transform 0.45s ease;
 }
 
-.product-card:hover .product-image,
-.product-card:focus-within .product-image {
-  transform: scale(1.06);
+.product-card:hover .product-image {
+  transform: scale(1.05);
 }
 
 .product-details {
-  padding: 1.5rem;
+  padding: 1.4rem;
   display: grid;
   gap: 1rem;
 }
@@ -44,23 +41,24 @@
   display: inline-block;
   padding: 0.35rem 0.8rem;
   border-radius: 999px;
-  font-size: 0.85rem;
-  font-weight: 600;
-  color: #6b46c1;
-  background: rgba(124, 58, 237, 0.12);
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #1d4ed8;
+  background: rgba(59, 130, 246, 0.12);
 }
 
 .product-details h3 {
   margin: 0;
   font-size: 1.2rem;
-  line-height: 1.3;
+  color: #0f172a;
 }
 
 .product-details p {
   margin: 0;
-  color: #4a5568;
+  color: #475569;
   line-height: 1.7;
-  font-size: 0.96rem;
+  font-size: 0.95rem;
+  min-height: 3rem;
 }
 
 .product-meta {
@@ -72,35 +70,23 @@
 }
 
 .product-price {
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   font-weight: 700;
-  color: #1f2937;
+  color: #1d4ed8;
 }
 
 .add-button {
   border: none;
-  padding: 0.85rem 1.2rem;
+  padding: 0.85rem 1.15rem;
   border-radius: 999px;
-  background: linear-gradient(135deg, #7b5cff 0%, #a855f7 100%);
+  background: #2563eb;
   color: white;
-  font-weight: 600;
-  transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease;
+  font-weight: 700;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .add-button:hover,
 .add-button:focus-visible {
   transform: translateY(-1px);
-  box-shadow: 0 14px 24px rgba(124, 58, 237, 0.2);
-  opacity: 0.96;
-}
-
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(18px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  box-shadow: 0 12px 22px rgba(37, 99, 235, 0.18);
 }
