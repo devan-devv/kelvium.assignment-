@@ -1,6 +1,6 @@
 import Header from './components/Header.jsx';
 import ProductList from './components/ProductList.jsx';
-import products from './data/products.js';
+import { products } from './data/products.js';
 import './styles/App.css';
 
 function App() {

@@ -1,5 +1,5 @@
 import ProductCard from './ProductCard.jsx';
-import './ProductList.css';
+import '../styles/ProductList.css';
 
 function ProductList({ products }) {
   return (
