@@ -1,0 +1,68 @@
+const products = [
+  {
+    id: 1,
+    name: 'Aria Wireless Earbuds',
+    price: 79.99,
+    image: 'https://images.unsplash.com/photo-1518444027678-26fbf8dbf7d4?auto=format&fit=crop&w=900&q=80',
+    description: 'Noise-cancelling earbuds with long battery life and premium sound for everyday listening.',
+    category: 'Audio',
+  },
+  {
+    id: 2,
+    name: 'Luna Smart Mug',
+    price: 34.5,
+    image: 'https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=900&q=80',
+    description: 'Temperature-controlled ceramic mug that keeps drinks warm and stylish at the desk.',
+    category: 'Home',
+  },
+  {
+    id: 3,
+    name: 'Nova Fitness Tracker',
+    price: 59.99,
+    image: 'https://images.unsplash.com/photo-1519861158295-0f4dbf179d4c?auto=format&fit=crop&w=900&q=80',
+    description: 'Sleek fitness band with activity monitoring, sleep tracking, and smartphone alerts.',
+    category: 'Wearables',
+  },
+  {
+    id: 4,
+    name: 'Solace Aromatherapy Kit',
+    price: 24.99,
+    image: 'https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=900&q=80',
+    description: 'Premium essential oil diffuser set with calming scents for home relaxation.',
+    category: 'Wellness',
+  },
+  {
+    id: 5,
+    name: 'Atlas Travel Backpack',
+    price: 89.0,
+    image: 'https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=900&q=80',
+    description: 'Durable daypack with padded straps, multiple compartments, and water-resistant fabric.',
+    category: 'Travel',
+  },
+  {
+    id: 6,
+    name: 'Lumen Desk Lamp',
+    price: 42.75,
+    image: 'https://images.unsplash.com/photo-1493666438817-866a91353ca9?auto=format&fit=crop&w=900&q=80',
+    description: 'Modern LED desk lamp with touch controls and adjustable brightness levels.',
+    category: 'Office',
+  },
+  {
+    id: 7,
+    name: 'Aster Plant Care Set',
+    price: 29.5,
+    image: 'https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=900&q=80',
+    description: 'Complete indoor plant kit with planter, soil, and stylish care tools.',
+    category: 'Garden',
+  },
+  {
+    id: 8,
+    name: 'Vivid Notebook Bundle',
+    price: 19.99,
+    image: 'https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=900&q=80',
+    description: 'Softcover notebook set with premium paper, ideal for notes, sketches, and planning.',
+    category: 'Stationery',
+  },
+];
+
+export default products;
