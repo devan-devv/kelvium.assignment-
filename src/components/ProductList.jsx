@@ -1,7 +1,7 @@
 import ProductCard from './ProductCard.jsx';
 import '../styles/ProductList.css';
 
-function ProductList({ products }) {
+function ProductList({ products, onAddToCart }) {
   return (
     <section className="product-list-section">
       <div className="section-heading">
@@ -10,7 +10,7 @@ function ProductList({ products }) {
       </div>
       <div className="product-grid">
         {products.map((product) => (
-          <ProductCard key={product.id} product={product} />
+          <ProductCard key={product.id} product={product} onAddToCart={onAddToCart} />
         ))}
       </div>
     </section>
