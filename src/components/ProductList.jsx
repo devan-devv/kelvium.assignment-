@@ -1,7 +1,10 @@
+import { useCart } from '../context/CartContext.jsx';
 import ProductCard from './ProductCard.jsx';
 import '../styles/ProductList.css';
 
 function ProductList({ products }) {
+  const { addToCart } = useCart();
+
   return (
     <section className="product-list-section">
       <div className="section-heading">
@@ -10,7 +13,11 @@ function ProductList({ products }) {
       </div>
       <div className="product-grid">
         {products.map((product) => (
-          <ProductCard key={product.id} product={product} />
+          <ProductCard 
+            key={product.id} 
+            product={product}
+            onAddToCart={addToCart}
+          />
         ))}
       </div>
     </section>
